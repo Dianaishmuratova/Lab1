@@ -1,53 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Lab1 by Dianaishmuratova</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+ <head>
+  <title>canvas</title>
+  <meta charset="utf-8">
+<h3>Ishmuratova Diana</h3>
+<h3>Variant 7</h3>
 
-  </head>
-  <body>
+  <canvas id="smile" width="500" height="500">
+    <p>Ваш браузер не поддерживает рисование.</p>
+  </canvas>
 
-      <header>
-        <h1>Lab1</h1>
-        <p>Первый опыт</p>
-      </header>
+<script type="text/javascript">
+    var myCanvas = document.getElementById('smile');
 
-      <div id="banner">
-        <span id="logo"></span>
+     var cxt = myCanvas.getContext('2d');
+     // Рисуем окружность 
+cxt.beginPath();
+     cxt.strokeStyle = "#000000";
+     cxt.fillStyle = "#FFF8DC";
+     cxt.beginPath();
+     cxt.arc(200,100,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+cxt.beginPath();
+     cxt.strokeStyle = "#000000";
+     cxt.fillStyle = "#FFF8DC";
+     cxt.beginPath();
+     cxt.arc(200,220,70,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+cxt.beginPath();
+     cxt.strokeStyle = "#000000";
+     cxt.fillStyle = "#FFF8DC";
+     cxt.beginPath();
+     cxt.arc(200,390,100,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+     // Рисуем левый глаз 
+cxt.beginPath();
+     cxt.fillStyle = "#FF69B4";
+     cxt.beginPath();
+     cxt.arc(184,90,8,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+     // Рисуем правый глаз 
+cxt.beginPath();
+     cxt.fillStyle="FF69B4";
+     cxt.beginPath();
+     cxt.arc(216,90,8,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+     
 
-        <a href="https://github.com/Dianaishmuratova/Lab1" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/Dianaishmuratova/Lab1/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/Dianaishmuratova/Lab1/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
+    // Рисуем прямоугольник
+cxt.beginPath();
+ 	cxt.fillStyle="#000000";
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h3>
-<a id="lab1" class="anchor" href="#lab1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lab1</h3>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/Dianaishmuratova">Dianaishmuratova</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+	cxt.fillRect(250,150,105,30);
+
+// Рисуем прямоугольник
+cxt.beginPath();
+ 	cxt.fillStyle="#000000";
+	cxt.fillRect(45,150,105,30);
+// Рисуем прямоугольник
+cxt.beginPath();
+ 	cxt.fillStyle="#7B68EE";
+	cxt.fillRect(165,0,70,50);
+// Рисуем прямоугольник
+cxt.beginPath();
+ 	cxt.fillStyle="#0000FF";
+	cxt.fillRect(40,80,10,360);
+     // Рисуем рот
+cxt.beginPath();
+     cxt.fillStyle="#FF0000";
+
+	cxt.fillRect(175,125,50,3);
+
+// Рисуем нос
+cxt.beginPath();
+ cxt.fillStyle="#FF8C00"; 
+cxt.moveTo(120,110);
+cxt.lineTo(200,115);
+cxt.lineTo(200,100);
+cxt.fill();
+
+
+  </script>
+ </head>
+ <body>
 </html>
